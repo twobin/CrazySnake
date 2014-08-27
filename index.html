@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>方格贪食蛇 by twobin</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+<!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/snakeGame.js"></script>
+</head>
+<body>
+
+<div class="head clearfix">
+<h1><a href="http://www.cnblogs.com/twobin/">twobin’ <span id="blog">blog</span></a></h1><span id="subtitle">jQuery系列小游戏　|　方格贪食蛇...</span>
+</div>
+
+<div class="wrap">
+	<div class="play_wrap">
+		<div id="play_area"></div>
+        <div class="play_menu">
+        	<a id="play_btn_start" class="play_btn" href="javascript:void(0);" unselectable="on">开始</a>
+            <a id="play_btn_start" class="play_btn" href="#" rel="popover" title="游戏帮助说明" data-content="jQ贪食蛇游戏规则：用“上”、“下”、“左”、“右”键控制方向；游戏在开始前和暂停时可调整游戏难度；难度分“傻逼”、“凡人”、“牛逼”、“变态”；对应的分值为2、5、10、20。更多信息，请进入我的博客：http://www.cnblogs.com/twobin/">帮助说明</a>
+            <a id="play_btn_level" class="play_btn" href="javascript:void(0);" unselectable="on">
+            	<span class="level_text">牛逼</span>
+            	<span class="level_icon"></span>           	
+            </a>
+            	<div class="level_menu" id="play_menu_level">
+                	<ul>
+                    	<li>
+                        	<a href="javascript:void(0);" level=0 >傻逼</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" level=1 >凡人</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" level=2 >牛逼</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" level=3 >变态</a>
+                        </li>
+                    </ul>
+                </div>
+
+        	<p>分数: <span id="play_score">0</span></p>
+        	<p>方向: <span id="play_direction">right</span></p>
+            <!-- <p>说明：<br>
+            -用“上”、“下”、“左”、“右”键控制方向；<br>
+            -游戏在开始前和暂停时可调整游戏难度；<br>
+            -难度分“傻逼”、“凡人”、“牛逼”、“变态”；<br>			
+            -对应的分值为2、5、10、20；
+            </p> -->
+        </div>
+    </div>
+</div>
+<script>
+    $("a[rel=popover]").popover();
+</script>
+</body>
+</html>
